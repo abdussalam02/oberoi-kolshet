@@ -3271,7 +3271,7 @@ Responsive Style Start
   background-color: black;
 }
 
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 430px) {
   .list-half-width > * {
     width: 100%;
   }
@@ -3283,8 +3283,14 @@ Responsive Style Start
     height: auto;
   }
   .apartments-plan-img .btn {
-    position: absolute;
-    top: 87%;
+    top: 85%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .apartments-plan-img .btn {
+    top: 75%;
     left: 50%;
   }
 }
