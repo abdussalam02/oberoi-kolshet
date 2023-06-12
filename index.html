@@ -33,9 +33,7 @@
     <link rel="stylesheet" href="/webfonts/flaticon/flaticon.css" />
     <link rel="stylesheet" href="/css/owl.css" />
     <link rel="stylesheet" href="/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="/css/layerslider.css" />
     <link rel="stylesheet" href="/css/template.css" />
-
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/color-2.css" />
 </head>
@@ -57,6 +55,11 @@
     <div id="page_wrapper" class="bg-light">
         <!--============== Header Section Start ==============-->
         <header class="header-style nav-on-top bg-white">
+            <div class="top-header">
+                <div class="px-5 pt-1 text-end" >
+                    <h5 style="color: var(--theme-primary-color) !important;"><i class="fa-solid fa-phone"></i> +91 XXXXXXXXXX</h5>
+                </div>
+            </div>
             <div class="main-nav">
                 <div class="container-fluid px-lg-5 px-sm-0">
                     <div class="row">
@@ -72,28 +75,30 @@
                                 <div class="collapse navbar-collapse sm-ml-0" id="navbarSupportedContent">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/">Home</a>
+                                            <a class="nav-link" href="/"><i class="fa-solid fa-house"></i> Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#overview">Overview</a>
+                                            <a class="nav-link" href="#overview"><i class="fa-solid fa-list"></i> Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#configuration">Configuration</a>
+                                            <a class="nav-link" href="#configuration"><i class="fa-solid fa-sitemap"></i> Configuration</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#amenities">Amenities</a>
+                                            <a class="nav-link" href="#amenities"><i class="fa-solid fa-wifi"></i> Amenities</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#location">Location</a>
+                                            <a class="nav-link" href="#location"><i class="fa-solid fa-location-crosshairs"></i> Location</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#galleries">Gallery</a>
+                                            <a class="nav-link" href="#galleries"><i class="fa-regular fa-image"></i> Gallery</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#contact">Contact Us</a>
+                                            <a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i> Contact Us</a>
                                         </li>
                                     </ul>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn">E-Brochure</a>
+                                    <div class="bouncer-btn">
+                                        <button data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-download"></i> E-Brochure</button>
+                                    </div>
                                 </div>
                             </nav>
                         </div>
@@ -104,408 +109,30 @@
         <!--============== Header Section End ==============-->
 
         <!--============== Slider Area Start ==============-->
-        <div class="full-row p-0 overflow-hidden">
-            <div id="slider" class="overflow-hidden" style="
-            width: 1920px;
-            height: 720px;
-            margin: 0 auto;
-            margin-bottom: 0px;
-          ">
-                <!-- Slide 1-->
-                <div class="ls-slide" data-ls="kenburnsscale:1.2; duration:12000;">
-                    <img width="1920" height="1280" src="/images/slider-1.jpg" class="ls-bg" alt="" />
-                    <div style="
-                width: 100%;
-                height: 100%;
-                background: rgba(37, 40, 43, 0.49);
-                top: 50%;
-                left: 50%;
-              " class="ls-l ls-hide-phone"
-                        data-ls="easingin:easeOutQuint; durationin:1500; durationout:400; parallaxlevel:0; position :fixed;">
-                    </div>
-                    <div style="
-                top: 0px;
-                left: 0px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                height: 860px;
-                width: 460px;
-                background: #181a1d;
-                font-size: 13px;
-                opacity: 0.8;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; delayin:400; fadein:false; widthin:0; offsetxout:left; easingout:easeInQuint; skewxout:-10;">
-                    </div>
-                    <div style="
-                top: 0px;
-                left: 0px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                height: 860px;
-                width: 460px;
-                background: #181a1d;
-                font-size: 13px;
-                opacity: 1;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; delayin:500; fadein:false; widthin:0; offsetxout:left; easingout:easeInQuint; skewxout:-10;">
-                    </div>
-                    <div style="
-                letter-spacing: -7px;
-                top: 90px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                font-family: Verdana;
-                font-size: 40px;
-                height: 2px;
-                width: 55px;
-                opacity: 0.75;
-                border-radius: 10px;
-              " class="ls-l bg-primary ls-hide-phone"
-                        data-ls="showinfo:1; durationin:1500; delayin:1000; fadein:false; clipin:0 100% 0 0; offsetxout:left;">
-                    </div>
-                    <p style="
-                top: 60px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                font-size: 18px;
-                color: #fff;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; offsetyin:top; delayin:1000; easingin:easeOutQuint; offsetxout:left; skewxout:-10; texttransitionin:true; texttypein:chars_asc; textshiftin:20; textoffsetyin:-70lh; textdurationin:800; texteasingin:easeOutQuint; textfadein:false; textstartatin:transitioninstart + 0;">
-                        Booking Ready
-                    </p>
-                    <h3 style="
-                top: 120px;
-                left: 60px;
-                line-height: 50px;
-                text-align: initial;
-                white-space: normal;
-                width: 360px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone font-400"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2000; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        2 BHK LUXURY FLAT
-                    </h3>
-                    <h6 style="
-                top: 185px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                padding-right: 20px;
-              " class="ls-l text-primary ls-hide-phone"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2300; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        Kolshet, Thane
-                    </h6>
-                    <h4 style="
-                top: 215px;
-                left: 60px;
-                text-align: initial;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                padding-right: 20px;
-              " class="ls-l text-white ls-hide-phone font-400"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2600; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view">Know Price ₹</a>
-                    </h4>
-                    <p style="
-                top: 250px;
-                left: 60px;
-                width: 300px;
-                text-align: initial;
-                text-decoration: none;
-                white-space: normal;
-                mix-blend-mode: normal;
-                line-height: 28px;
-                color: #a1a1a1;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2900; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        The thoughtfully designed homes feature modern amenities, elegant interiors, and a seamless blend of functionality and aesthetics. With attention to detail and superior craftsmanship, Oberoi Realty ensures that every 2 BHK apartment meets the highest standards of quality.                    </p>
-                    <p style="
-                top: 500px;
-                left: 60px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3500; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-bed flat-small text-primary me-2"></i> 2
-                    </p>
-                    <p style="
-                top: 500px;
-                left: 150px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3800; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-bathroom flat-small text-primary me-2"></i> 3
-                    </p>
-                    <p style="
-                top: 500px;
-                left: 240px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3800; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-house-plan flat-small text-primary me-2"></i>
-                        800 - 1200sqft<sup>2</sup>
-                    </p>
-                    <a style="" class="ls-l ls-hide-phone" href="#" target="_self" data-bs-toggle="modal" data-bs-target="#quick-view"
-                        data-ls="delayin:5100; easingin:easeOutBack; rotatexin:-360; offsetxout:-80; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#0c2109; parallaxlevel:0;">
-                        <p style="
-                  cursor: pointer;
-                  padding-top: 20px;
-                  padding-right: 35px;
-                  padding-bottom: 20px;
-                  padding-left: 35px;
-                  font-family: Open Sans;
-                  font-weight: 600;
-                  font-size: 15px;
-                  color: #fff;
-                  background: var(--theme-primary-color);
-                  border-radius: 0;
-                  top: 90%;
-                  left: 60px;
-                  text-align: center;
-                  letter-spacing: 2px;
-                " class="">
-                            VIEW FULL INFO
-                        </p>
-                    </a>
-                    <p style="
-                top: 71%;
-                left: 90%;
-                padding: 10px 15px;
-                background-color: #fff;
-                border-radius: 5px;
-              " class="ls-l text-center ls-hide-phone"
-                        data-ls="offsetxin:0; offsetyin:200; easingin:easeOutBack; rotatein:0; transformoriginin:30px 360px 0; offsetxout:-80; delayin:500; durationout:400; parallax:false; parallaxlevel:1;">
-                        <span class="h6 d-block">Have a Question?</span><span class="text-primary">+0800 98765432</span>
-                    </p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-banner" src="https://wadhwagroupprojects.in/wisecity/images/Banner1.jpg" alt="banner">
+                    <img class="m-banner" src="https://wadhwagroupprojects.in/wisecity/images/m2-banner.jpg" alt="banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-banner" src="https://wadhwagroupprojects.in/wisecity/images/Banner3.jpg" alt="banner">
+                    <img class="m-banner" src="https://wadhwagroupprojects.in/wisecity/images/m3-banner.jpg" alt="banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-banner" src="https://wadhwagroupprojects.in/wisecity/images/Banner2.jpg" alt="banner">
+                    <img class="m-banner" src="https://wadhwagroupprojects.in/wisecity/images/m1-banner.jpg" alt="banner">
+                  </div>
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="ls-slide" data-ls="kenburnsscale:1.2; duration:12000;">
-                    <img width="1920" height="1280" src="/images/slider-2.jpg" class="ls-bg" alt="" />
-                    <div style="
-                width: 100%;
-                height: 100%;
-                background: rgba(37, 40, 43, 0.49);
-                top: 50%;
-                left: 50%;
-              " class="ls-l ls-hide-phone"
-                        data-ls="easingin:easeOutQuint; durationin:1500; durationout:400; parallaxlevel:0; position:fixed;">
-                    </div>
-                    <div style="
-                top: 0px;
-                left: 0px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                height: 860px;
-                width: 460px;
-                background: #181a1d;
-                font-size: 13px;
-                opacity: 0.8;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; delayin:400; fadein:false; widthin:0; offsetxout:left; easingout:easeInQuint; skewxout:-10;">
-                    </div>
-                    <div style="
-                top: 0px;
-                left: 0px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                height: 860px;
-                width: 460px;
-                background: #181a1d;
-                font-size: 13px;
-                opacity: 1;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; delayin:500; fadein:false; widthin:0; offsetxout:left; easingout:easeInQuint; skewxout:-10;">
-                    </div>
-                    <div style="
-                letter-spacing: -7px;
-                top: 90px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                font-family: Verdana;
-                font-size: 40px;
-                height: 2px;
-                width: 55px;
-                opacity: 0.75;
-                border-radius: 10px;
-              " class="ls-l bg-primary ls-hide-phone"
-                        data-ls="showinfo:1; durationin:1500; delayin:1000; fadein:false; clipin:0 100% 0 0; offsetxout:left;">
-                    </div>
-                    <p style="
-                top: 60px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                font-size: 18px;
-                color: #fff;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; offsetyin:top; delayin:1000; easingin:easeOutQuint; offsetxout:left; skewxout:-10; texttransitionin:true; texttypein:chars_asc; textshiftin:20; textoffsetyin:-70lh; textdurationin:800; texteasingin:easeOutQuint; textfadein:false; textstartatin:transitioninstart + 0;">
-                        Booking Ready
-                    </p>
-                    <h3 style="
-                top: 120px;
-                left: 60px;
-                line-height: 50px;
-                text-align: initial;
-                white-space: normal;
-                width: 360px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone font-400"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2000; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        3 BHK Luxury Flat
-                    </h3>
-                    <h6 style="
-                top: 185px;
-                left: 60px;
-                text-align: initial;
-                font-weight: 400;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                padding-right: 20px;
-              " class="ls-l text-primary ls-hide-phone"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2300; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        Kolshet, Thane
-                    </h6>
-                    <h4 style="
-                top: 215px;
-                left: 60px;
-                text-align: initial;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                padding-right: 20px;
-              " class="ls-l text-white ls-hide-phone font-400"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2600; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view">Know Price ₹</a>
-                    </h4>
-                    <p style="
-                top: 250px;
-                left: 60px;
-                width: 300px;
-                text-align: initial;
-                text-decoration: none;
-                white-space: normal;
-                mix-blend-mode: normal;
-                line-height: 28px;
-                color: #a1a1a1;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2900; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        Oberoi Realty presents luxurious 3 BHK apartments that redefine modern living. These spacious and well-designed homes offer a perfect blend of elegance and functionality. With impeccable attention to detail, Oberoi Realty creates residences that exude opulence and provide a comfortable lifestyle.
-                    </p>
-                    <p style="
-                top: 510px;
-                left: 60px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3500; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-bed flat-small text-primary me-2"></i> 3
-                    </p>
-                    <p style="
-                top: 510px;
-                left: 150px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3800; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-bathroom flat-small text-primary me-2"></i> 4
-                    </p>
-                    <p style="
-                top: 510px;
-                left: 240px;
-                text-decoration: none;
-                mix-blend-mode: normal;
-                color: #fff;
-                padding-right: 20px;
-              " class="ls-l ls-hide-phone"
-                        data-ls="showinfo:1; rotatexin:45; durationin:1500; delayin:3800; transformoriginin:0% 50% 0; clipin:0 100% 0 0; offsetxout:left;">
-                        <i class="flaticon-house-plan flat-small text-primary me-2"></i>
-                        1200 - 1800sqft<sup>2</sup>
-                    </p>
-                    <a class="ls-l ls-hide-phone" href="#" target="_self" data-bs-toggle="modal" data-bs-target="#quick-view"
-                        data-ls="delayin:5100; easingin:easeOutBack; rotatexin:-360; offsetxout:-80; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#0c2109; parallaxlevel:0;">
-                        <p style="
-                  cursor: pointer;
-                  padding-top: 20px;
-                  padding-right: 35px;
-                  padding-bottom: 20px;
-                  padding-left: 35px;
-                  font-family: Open Sans;
-                  font-weight: 600;
-                  font-size: 15px;
-                  color: #fff;
-                  background: var(--theme-primary-color);
-                  border-radius: 0;
-                  top: 90%;
-                  left: 60px;
-                  text-align: center;
-                  letter-spacing: 2px;
-                " class="">
-                            VIEW FULL INFO
-                        </p>
-                    </a>
-
-                    <p style="
-                top: 71%;
-                left: 90%;
-                padding: 10px 15px;
-                background-color: #fff;
-                border-radius: 5px;
-              " class="ls-l text-center ls-hide-phone"
-                        data-ls="offsetxin:0; offsetyin:200; easingin:easeOutBack; rotatein:0; transformoriginin:30px 360px 0; offsetxout:-80; delayin:500; durationout:400; parallax:false; parallaxlevel:1;">
-                        <span class="h6 d-block">Have a Question?</span><span class="text-primary">+0800 98765432</span>
-                    </p>
-                </div>
-            </div>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         <!--============== Slider Area End ==============-->
 
         <!--============== About Us Section Start ==============-->
@@ -569,17 +196,17 @@
                                     <tr>
                                         <td scope="row">1 BHK</td>
                                         <td>500 - 800 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn">Check Price</td>
+                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">2 BHK</td>
                                         <td>800 - 1200 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn">Check Price</td>
+                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
                                     </tr>
                                     <tr scope="row">
                                         <td scope="row">3 BHK</td>
                                         <td>1200 - 1800 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn">Check Price</td>
+                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -620,7 +247,7 @@
                                 <div class="row row-cols-lg-2 row-cols-1 g-4">
                                     <div class="col">
                                         <div class="apartments-plan-info bg-primary text-dark">
-                                            <h2 class="text-dark">1 BHK Luxury Flat</h2>
+                                            <h2 style="color: #f3f3f3;">1 BHK Luxury Flat</h2>
                                             <p>
                                                 Oberoi Realty offers exquisite 1 BHK apartments that provide a comfortable and stylish living experience. These thoughtfully designed homes feature modern amenities, elegant interiors, and a seamless blend of functionality and aesthetics. With attention to detail and superior craftsmanship, Oberoi Realty ensures that every 1 BHK apartment meets the highest standards of quality. Experience a perfect balance of convenience, luxury, and affordability with Oberoi Realty's 1 BHK apartments.
                                             </p>
@@ -645,7 +272,9 @@
                                     <div class="col">
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/1bhk.jpg" alt="Oberoi Realty Kolshet 1 BHK Layout" />
-                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view">See Floor Plan</button>
+                                            <div class="bouncer-btn">
+                                                <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -654,7 +283,7 @@
                                 <div class="row row-cols-xl-2 row-cols-sm-2 row-cols-1 g-4">
                                     <div class="col">
                                         <div class="apartments-plan-info bg-primary text-dark">
-                                            <h2 class="text-dark">2 BHK Luxury Flat</h2>
+                                            <h2 style="color: #f3f3f3;">2 BHK Luxury Flat</h2>
                                             <p>
                                                 Discover the epitome of modern living with Oberoi Realty's exceptional 2 BHK apartments. Step into spacious interiors designed to maximize your living space and create a warm and inviting atmosphere. Immerse yourself in the finest finishes and superior craftsmanship that defines Oberoi's commitment to excellence. Embrace a lifestyle that combines luxury and affordability with the remarkable 2 BHK apartments by Oberoi Realty.
                                             </p>
@@ -679,7 +308,7 @@
                                     <div class="col">
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/2bhk.png" alt="Oberoi Realty Kolshet 2 BHK Layout" />
-                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view">See Floor Plan</button>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
                                         </div>
                                     </div>
                                 </div>
@@ -688,7 +317,7 @@
                                 <div class="row row-cols-xl-2 row-cols-sm-2 row-cols-1 g-4">
                                     <div class="col">
                                         <div class="apartments-plan-info bg-primary text-dark">
-                                            <h2 class="text-dark">3 BHK Luxury Flat</h2>
+                                            <h2 style="color: #f3f3f3;">3 BHK Luxury Flat</h2>
                                             <p>
                                                 Oberoi Realty presents luxurious 3 BHK apartments that redefine modern living. Oberoi Realty creates residences that exude opulence and provide a comfortable lifestyle. These spacious and well-designed homes offer a perfect blend of elegance and functionality. Featuring stylish interiors, premium finishes, and top-of-the-line amenities, the 3 BHK apartments by Oberoi Realty offer a truly luxurious living experience. Elevate your lifestyle with Oberoi Realty's exceptional 3 BHK apartments.
                                             </p>
@@ -713,7 +342,7 @@
                                     <div class="col">
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/3bhk.png" alt="Oberoi Realty Kolshet 3 BHK Layout" />
-                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view">See Floor Plan</button>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
                                         </div>
                                     </div>
                                 </div>
@@ -736,53 +365,53 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 mb-5">
-                        <div class="row">
-                            <div class="col-lg-6 d-flex justify-content-center my-2">
-                                <img class="img img-fluid" src="/images/yoga.jpg" alt="Oberoi Realty Kolshet Indoor Amenities" style="filter: blur(3px);">
-                            </div>
-                            <div class="col-lg-6 d-flex justify-content-center my-2">
-                                <ul class="list-style-tick">
-                                    <h4 class="mb-3">Indoor Amenities</h4>
-                                    <li>Landscaped Garden</li>
-                                    <li>Children's Play Area</li>
-                                    <li>Squash Court</li>
-                                    <li>Games Area/ Badminton</li>
-                                    <li>Indoor Games Area</li>
-                                    <li>Billiards / Pool</li>
-                                    <li>Rock Climbing</li>
-                                    <li>Leisure Pool</li>
-                                    <li>Jet Kids Pool</li>
-                                    <li>Gymnasium</li>
-                                    <li>Steam Room</li>
-                                    <li>Yoga / Meditation </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/garden.jpg" alt="">
+                        <p class="ac-card2">Landscaped Garden</p>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-6 d-flex justify-content-center my-2">
-                                <ul class="list-style-tick">
-                                    <h4 class="mb-3">Outdoor Amenities</h4>
-                                    <li>Outdoor Meditation Area</li>
-                                    <li>Jogging Track</li>
-                                    <li>Tennis Court</li>
-                                    <li>Skating Rink</li>
-                                    <li>Swimming Pool</li>
-                                    <li>Kids' Pool</li>
-                                    <li>Aqua Gym</li>
-                                    <li>Cricket Net</li>
-                                    <li>Swing Corner</li>
-                                    <li>Golf Simulator</li>
-                                    <li>Party Lawn</li>
-                                    <li>Pre-Function Plaza</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 d-flex justify-content-center my-2">
-                                <img class="img img-fluid" src="/images/jogging.jpg" alt="Oberoi Realty Kolshet Outdoor Amenities" style="filter: blur(3px);">
-                            </div>
-                        </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/kids-play.jpg" alt="">
+                        <p class="ac-card2">Children's Play Area</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/squash.jpg" alt="">
+                        <p class="ac-card2">Squash Court</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/badminton.jpg" alt="">
+                        <p class="ac-card2">Badminton</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/gym.jpg" alt="">
+                        <p class="ac-card2">Gymnasium</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/yoga.jpeg" alt="">
+                        <p class="ac-card2">Yoga/Meditation</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/jogging.jpeg" alt="">
+                        <p class="ac-card2">Jogging Track</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/tennis.jpeg" alt="">
+                        <p class="ac-card2">Tennis Court</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/swim.jpeg" alt="">
+                        <p class="ac-card2">Swimming Pool</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/pool.jpeg" alt="">
+                        <p class="ac-card2">Kids' Pool</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/golf.jpeg" alt="">
+                        <p class="ac-card2">Golf Simulator</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4">
+                        <img class="img img-fluid amen-img" src="/images/amenities/party.jpeg" alt="">
+                        <p class="ac-card2">Party Lawn</p>
                     </div>
                 </div>
             </div>
@@ -809,9 +438,10 @@
                     <div class="col-lg-5 my-2 ml-30">
                         <div class="bb-accordion ac-single-show accordion-plus-left">
                             <div class="ac-card">
-                                <a class="ac-toggle text-dark text-truncate active" href="#">Educational Centres</a>
+                                <a class="ac-toggle text-truncate active" href="#">Educational Centres <i class="fa-sharp fa-solid fa-school text-primary float-end"></i></a>
+                                
                                 <div class="ac-collapse show" style="display: block">
-                                    <ul class="list-style-tick ml-30">
+                                    <ul class="ml-30">
                                         <li>Daffodils School - 0.8 Km</li>
                                         <li>Blossom English High School - 0.4 Km</li>
                                         <li>Amber International School - 3.3 Km</li>
@@ -820,10 +450,11 @@
                                 </div>
                             </div>
                             <div class="ac-card">
-                                <a class="ac-toggle text-dark text-truncate" href="#">Entertainment Centres</a>
+                                <a class="ac-toggle text-truncate" href="#">Entertainment Centres <i class="fa-solid fa-cart-shopping text-primary float-end"></i></a>
+                                
                                 <div class="ac-collapse">
-                                    <ul class="list-style-tick ml-30">
-                                        <li> D mall - 0.7 Km</li>
+                                    <ul class="ml-30">
+                                        <li>D mall - 0.7 Km</li>
                                         <li>Cosmos Mall - 1.2 Km</li>
                                         <li>Viviana Mall - 3.1 Km</li>
                                         <li>R-Mall Thane West - 1.1 Km</li>
@@ -831,9 +462,10 @@
                                 </div>
                             </div>
                             <div class="ac-card">
-                                <a class="ac-toggle text-dark text-truncate" href="#">Connectivity</a>
+                                <a class="ac-toggle text-truncate" href="#">Connectivity <i class="fa-solid fa-road text-primary float-end"></i></a>
+                                
                                 <div class="ac-collapse">
-                                    <ul class="list-style-tick ml-30">
+                                    <ul class="ml-30">
                                         <li>Dhokali Naka Thane West - 2 to 3 Mins</li>
                                         <li>Majiwada - 20 Mins</li>
                                         <li>Mumbai Nashik Express - 1 Min</li>
@@ -843,9 +475,10 @@
                                 </div>
                             </div>
                             <div class="ac-card">
-                                <a class="ac-toggle text-dark text-truncate" href="#">Hospitals</a>
+                                <a class="ac-toggle text-truncate" href="#">Hospitals <i class="fa-solid fa-house-medical-circle-check text-primary float-end"></i></a>
+                                
                                 <div class="ac-collapse">
-                                    <ul class="list-style-tick ml-30">
+                                    <ul class="ml-30">
                                         <li>Jupiter Hospital</li>
                                         <li>Bethany Hospitals</li>
                                         <li>Hiranandani Hospital</li>
@@ -1119,25 +752,7 @@
                     <div class="col">
                         <span class="text-white">© 2023 All rights reserved.</span>
                     </div>
-                    <div class="col">
-                        <ul class="media-widget line-menu float-end list-color-gray">
-                            <li>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -1152,65 +767,52 @@
         </div>
         <!-- End Scroll To top -->
         <!--============== Footer Section End ==============-->
-
-        <!--============== Modal Start ==============-->
-        <div class="overlay-dark modal fade quick-view-modal" id="quick-view">
-            <div class="modal-dialog modal-dialog-centered modal-xl" >
-                <div class="modal-content" style="background-color: #f3f3f3 !important;">
-                    <div class="close view-close" data-bs-dismiss="modal">
-                        <span aria-hidden="true" >&times;</span>
+        <div class="modal" id="quick-view">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-1 p-3" style="background-color: #f3f3f3;">
+                    <div class="modal-header">
+                      <img class="img-fluid mx-auto d-block" src="/images/oberoi_logo.png" alt="">
                     </div>
-                    <div class="modal-body property-block summary p-3">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12">
-                                <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom m-2">
-                                    <img class="img img-fluid" src="images/oberoi-realty.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <div class="property_text transation py-3 pe-3">
-                                    <span class="d-inline-block text-primary">Contact Us</span>
-                                    <hr>
-                                    <div class="row justify-content-around">
-                                        <a href="#" class="btn btn-success mb-2"> <i class="fa-brands fa-whatsapp mr-2"></i> Whatsapp Us</a>
-                                        <a href="#" class="btn btn-info"> <i class="fa-solid fa-phone mr-2"></i> Call Us</a>
-                                    </div>
-                                    <hr>
-                                    <div class="form-simple">
-                                        <form id="contact-form" action="#" method="post" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-md-6 mb-20">
-                                                    <label class="mb-2">Full Name:</label>
-                                                    <input type="text" class="form-control bg-white" name="name" required="" />
-                                                </div>
-                                                <div class="col-md-6 mb-20">
-                                                    <label class="mb-2">Your Email:</label>
-                                                    <input type="email" class="form-control bg-white" name="email" required="" />
-                                                </div>
-                                                <div class="col-md-12 mb-20">
-                                                    <label class="mb-2">Subject:</label>
-                                                    <input type="text" class="form-control bg-white" name="subject" required="" />
-                                                </div>
-                                                <div class="col-md-12 mb-20">
-                                                    <label class="mb-2">Message:</label>
-                                                    <textarea class="form-control bg-white" name="message" rows="2"
-                                                        required=""></textarea>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <button class="btn btn-primary" name="submit" type="submit">
-                                                        Send Message
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row justify-content-center">                                
+                                <i class="fa-solid fa-circle-check text-primary" style="font-size: 45px; text-align: center;"></i>
+                                <h5 class="text-center mb-3">Fill the Form</h5>
+                                <i class="fa-solid fa-headset text-primary" style="font-size: 45px; text-align: center;"></i>
+                                <h5 class="text-center">Get Instant Callback</h5>
                             </div>
                         </div>
+                        <div class="col-lg-8">
+                            <div class="form-simple">
+                                <form id="contact-form" action="#" method="post" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-20">
+                                            <label class="mb-2">Full Name:</label>
+                                            <input type="text" class="form-control" name="name" required="1" />
+                                        </div>
+                                        <div class="col-md-12 mb-20">
+                                            <label class="mb-2">Phone Number:</label>
+                                            <input type="tel" class="form-control" name="phone" required="1" />
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary mx-auto d-block" name="submit" type="submit">
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
+
+
+        <!--============== Modal Start ==============-->
+
         <!--============== Modal End ==============-->
 
     </div>
@@ -1218,8 +820,6 @@
     <!-- Javascript Files -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/greensock.js"></script>
-    <script src="/js/layerslider.transitions.js"></script>
-    <script src="/js/layerslider.kreaturamedia.jquery.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap-select.min.js"></script>
@@ -1230,25 +830,12 @@
     <script src="/js/paraxify.js"></script>
     <script src="/js/custom.js"></script>
     <script>
+
         $(document).ready(function(){
-            $("#quick-view").modal('show');
-        });
-
-
-        $("#slider").layerSlider({
-            sliderVersion: "6.0.0",
-            type: "fullwidth",
-            responsiveUnder: 0,
-            maxRatio: 1,
-            slideBGSize: "auto",
-            hideUnder: 0,
-            hideOver: 100000,
-            skin: "numbers",
-            fitScreenWidth: true,
-            fullSizeMode: "fitheight",
-            thumbnailNavigation: "disabled",
-            height: 860,
-            skinsPath: "/skins/",
+            setTimeout(function() {
+            $('#quick-view').modal('show')  }, 15000);
+            setTimeout(function() {
+            $('#quick-view').modal('show')  }, 40000);
         });
     </script>
 </body>

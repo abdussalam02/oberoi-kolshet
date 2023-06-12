@@ -2313,13 +2313,26 @@ Accordion Style Start
 ==================================================================================*/
 
 .ac-card {
-  padding: 10px 0;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+
+.ac-card2 {
+  color: #ffffff;
+  text-align: center;
+  background-color: var(--theme-primary-color);
+  padding: 8px;
+  margin: 0;
+}
+.ac-card ul li {
+  list-style:disc;
+}
+
 .ac-collapse {
   margin-top: 20px;
 }
 .bb-accordion .ac-toggle i {
-  background-color: var(--theme-secondary-color);
   width: 30px;
   height: 30px;
   display: block;
@@ -3271,6 +3284,14 @@ Responsive Style Start
   background-color: black;
 }
 
+.my-slider {
+  width: 1920px;
+  height: 650px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+
 @media screen and (max-width: 430px) {
   .list-half-width > * {
     width: 100%;
@@ -3285,6 +3306,14 @@ Responsive Style Start
   .apartments-plan-img .btn {
     top: 85%;
     left: 50%;
+  }
+  .my-slider {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  .my-slider img {
+    max-width: max-content !important;
+    max-height: max-content !important;
   }
 }
 
@@ -3342,27 +3371,93 @@ Responsive Style Start
   background-color: #000;
 }
 
-.caller-bar {
-  writing-mode: vertical-rl;
-  background-color: #000;
-  position: fixed;
-  top: 60%;
-  z-index: 100;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+
+
+
+.design-btn {
+  height: 100%;
 }
 
-.caller-bar a {
-  text-orientation: mixed;
-  color: var(--theme-primary-color);
-  display: block;
-  text-align: center;
-  padding: 15px;
-  transition: all 0.3s ease;
-  font-size: 20px;
+.design-btn .button {
+  min-width: 150px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--theme-primary-color);
+background: linear-gradient(90deg, var(--theme-primary-color) 0%, var(--theme-primary-color) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px var(--theme-primary-color);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+
+.design-btn .button:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
 }
 
-.caller-bar a:hover {
-  background-color: #000;
+.design-btn button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.design-btn button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid var(--theme-primary-color);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.design-btn button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.m-banner {
+  display: none !important;
+}
+
+
+.amen-img {
+  height: 180px;
+}
+
+@media only screen and (max-width: 700px) {
+  .d-banner {
+      display: none !important;
+  }
+  .m-banner {
+      display: block !important;
+  }
+
+.amen-img {
+  height: 130px;
+}
 }
