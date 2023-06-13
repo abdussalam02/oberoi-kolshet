@@ -3291,6 +3291,9 @@ Responsive Style Start
   margin-bottom: 0px;
 }
 
+.modal-header img {
+  width: 100px;
+}
 
 @media screen and (max-width: 430px) {
   .list-half-width > * {
@@ -3456,8 +3459,23 @@ background: linear-gradient(90deg, var(--theme-primary-color) 0%, var(--theme-pr
   .m-banner {
       display: block !important;
   }
-
-.amen-img {
-  height: 130px;
+  .amen-img {
+    height: 130px;
+  }
 }
+
+@keyframes scale {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.scaling-button {
+  animation: scale 1.5s infinite;
 }

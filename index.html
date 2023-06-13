@@ -109,7 +109,7 @@
         <!--============== Header Section End ==============-->
 
         <!--============== Slider Area Start ==============-->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-banner" src="https://wadhwagroupprojects.in/wisecity/images/Banner1.jpg" alt="banner">
@@ -196,17 +196,17 @@
                                     <tr>
                                         <td scope="row">1 BHK</td>
                                         <td>500 - 800 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
+                                        <td><button href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">2 BHK</td>
                                         <td>800 - 1200 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
+                                        <td><button href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </button></td>
                                     </tr>
                                     <tr scope="row">
                                         <td scope="row">3 BHK</td>
                                         <td>1200 - 1800 (sqft)</td>
-                                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </a></td>
+                                        <td><button href="#" data-bs-toggle="modal" data-bs-target="#quick-view" class="btn btn-primary add-listing-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Check Price </button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -273,7 +273,7 @@
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/1bhk.jpg" alt="Oberoi Realty Kolshet 1 BHK Layout" />
                                             <div class="bouncer-btn">
-                                                <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
+                                                <a class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</a>
                                             </div>
                                         </div>
                                     </div>
@@ -308,7 +308,7 @@
                                     <div class="col">
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/2bhk.png" alt="Oberoi Realty Kolshet 2 BHK Layout" />
-                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
+                                            <a class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</a>
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +342,7 @@
                                     <div class="col">
                                         <div class="apartments-plan-img">
                                             <img style="filter: blur(6px);" class="img img-fluid" src="/images/3bhk.png" alt="Oberoi Realty Kolshet 3 BHK Layout" />
-                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</button>
+                                            <a class="btn" data-bs-toggle="modal" data-bs-target="#quick-view"><i class="fa-sharp fa-solid fa-eye"></i> See Floor Plan</a>
                                         </div>
                                     </div>
                                 </div>
@@ -366,51 +366,135 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/garden.jpg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/garden.jpg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/garden.jpg" alt="">
+                        </div>
                         <p class="ac-card2">Landscaped Garden</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/kids-play.jpg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/kids-play.jpg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/kids-play.jpg" alt="">
+                        </div>
                         <p class="ac-card2">Children's Play Area</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/squash.jpg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/squash.jpg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/squash.jpg" alt="">
+                        </div>
                         <p class="ac-card2">Squash Court</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/badminton.jpg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/badminton.jpg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/badminton.jpg" alt="">
+                        </div>
                         <p class="ac-card2">Badminton</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/gym.jpg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/gym.jpg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/gym.jpg" alt="">
+                        </div>
                         <p class="ac-card2">Gymnasium</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/yoga.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/yoga.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/yoga.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Yoga/Meditation</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/jogging.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/jogging.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/jogging.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Jogging Track</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/tennis.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/tennis.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/tennis.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Tennis Court</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/swim.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/swim.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/swim.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Swimming Pool</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/pool.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/pool.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/pool.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Kids' Pool</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/golf.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/golf.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/golf.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Golf Simulator</p>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
-                        <img class="img img-fluid amen-img" src="/images/amenities/party.jpeg" alt="">
+                        <div class="photo-overlay">
+                            <a href="/images/amenities/party.jpeg"
+                                class="photo-view transation xy-center" data-fancybox="gallery"
+                                data-caption="Caption for image">
+                                <span class="flaticon-eye-1 text-primary"></span>
+                            </a>
+                            <img class="img img-fluid amen-img" src="/images/amenities/party.jpeg" alt="">
+                        </div>
                         <p class="ac-card2">Party Lawn</p>
                     </div>
                 </div>
@@ -701,7 +785,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <button class="btn btn-primary" name="submit" type="submit">
-                                            Send Message
+                                            <i class="fa-solid fa-paper-plane"></i> Send Message
                                         </button>
                                     </div>
                                 </div>
@@ -767,9 +851,12 @@
         </div>
         <!-- End Scroll To top -->
         <!--============== Footer Section End ==============-->
+        
+
+        <!--============== Modal Start ==============-->
         <div class="modal" id="quick-view">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content rounded-1 p-3" style="background-color: #f3f3f3;">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-1 p-3" style="background-image: url(/images/slider-1.jpg);">
                     <div class="modal-header">
                       <img class="img-fluid mx-auto d-block" src="/images/oberoi_logo.png" alt="">
                     </div>
@@ -777,9 +864,9 @@
                       <div class="row">
                         <div class="col-lg-4">
                             <div class="row justify-content-center">                                
-                                <i class="fa-solid fa-circle-check text-primary" style="font-size: 45px; text-align: center;"></i>
+                                <i class="fa-solid fa-circle-check text-primary" style="font-size: 40px; text-align: center;"></i>
                                 <h5 class="text-center mb-3">Fill the Form</h5>
-                                <i class="fa-solid fa-headset text-primary" style="font-size: 45px; text-align: center;"></i>
+                                <i class="fa-solid fa-headset text-primary" style="font-size: 40px; text-align: center;"></i>
                                 <h5 class="text-center">Get Instant Callback</h5>
                             </div>
                         </div>
@@ -797,7 +884,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <button class="btn btn-primary mx-auto d-block" name="submit" type="submit">
-                                                Send Message
+                                                <i class="fa-solid fa-paper-plane"></i> Send Message
                                             </button>
                                         </div>
                                     </div>
@@ -809,10 +896,6 @@
                   </div>
             </div>
         </div>
-
-
-        <!--============== Modal Start ==============-->
-
         <!--============== Modal End ==============-->
 
     </div>
@@ -837,6 +920,15 @@
             setTimeout(function() {
             $('#quick-view').modal('show')  }, 40000);
         });
+
+        $(document).ready(function() {
+        // Target the button element
+        var button = $("button");
+
+        // Add class to start pulsating effect
+        button.addClass("scaling-button");
+        });
+
     </script>
 </body>
 
